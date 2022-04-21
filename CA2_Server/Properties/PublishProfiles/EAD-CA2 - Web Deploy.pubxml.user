@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOOu2XM4A20yeY35ntJh5igAAAAACAAAAAAAQZgAAAAEAACAAAADlTVv4eBE/BJ1J956vYVsye/j2unRFfRfiWHm0zxhDnwAAAAAOgAAAAAIAACAAAAAX2f1H0u1MnleVuyinX2/x3Rzy0ovC8JAt62ag5c+abIAAAADquRKWdmy7wRa2/8NoYAcIXuK+FqB9rosDFK80v+7Pf91W3dTqPRHqKlGuSIojb+Pg6iVCSMrlM9mBqXaCzaa7b+NT+N5tP6r/aZfxf4l/M1+59EmhBuSg+f/cR6e4OXPKhj07Enc21pvMHubbDHmPOveV9O8I24XYi/XB4a+gEkAAAAB1aV71WfrPlXt6jVscpq0ZXJZTMuYj9MwEYc36kQ4p7moakF8Ef8HCyqkCeleH5mFiO5q4DhFeKV6ZfbHUCiFG</EncryptedPassword>
+    <History>False|2022-04-20T16:13:02.9549957Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:ca2-crypto.database.windows.net,1433;Initial Catalog=Crypto-Database;User Id=admin@ca2-crypto;Password=Passwordead2" />
+    <AzureDBConnectionStrings Include="Data Source=tcp:ca2-crypto.database.windows.net,1433;Initial Catalog=Crypto-Database;User Id=crypto-admin@ca2-crypto;Password=Passwordead2" />
+  </ItemGroup>
+</Project>
