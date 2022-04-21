@@ -7,10 +7,12 @@ namespace CA2_Server
 {
     public class Books
     {
-        [ForeignKey("BookID")]
+        
         [Required]
         [Key]
         public int BookID { get; set; }
+
+        public string BookImage { get; set; }
         public string BookName { get; set; }
 
         public string Description { get; set; }
@@ -24,11 +26,16 @@ namespace CA2_Server
         [Required]
         [Key]
         public int AuthorID { get; set; }
+
+        public string AuthorImage { get; set; }
         public string AuthorName { get; set; }
         public int Age { get; set; }
         public DateTime DOB { get; set; }
 
         public int BookID { get; set; }
+
+        [ForeignKey("BookID")]
+        public Books Books { get; set; }
 
     }
 }

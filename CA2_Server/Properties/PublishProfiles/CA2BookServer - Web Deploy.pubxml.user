@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOOu2XM4A20yeY35ntJh5igAAAAACAAAAAAAQZgAAAAEAACAAAACTq+scLbg9ZwSQZiT/wqXux5sZv2mHput/sSB883fQXwAAAAAOgAAAAAIAACAAAAAbThAbR0E0jgAlleHd1oLUf1ogXhX10rDWMm5bwJNQJYAAAADZjodgKq5UoKUBAsp6gDtk9WJJ5EZhaBcdKE4HW4vN9246Jg2i7LuBXiNLNMJAiDuILEdzss/+uyVRBlOwwWKhW3uZ3SGTdOdf+XOiYobG6moEyeGzpj2nCO1L8Ry9CrjFIz/y6QFl938hR6Xn42efGtjS+vWZQ2UIFlCZsflq3UAAAADYF0MmryqLlBNU6jAoMmzQu3DCBYquD7C5fkLHqoB0npb7woNK8tyhEBazXM8y6LIi8qGEe43SbWOwUDfx1Q2j</EncryptedPassword>
+    <History>True|2022-04-21T19:26:41.7884665Z;True|2022-04-21T20:22:13.0686507+01:00;True|2022-04-21T19:50:16.2176854+01:00;True|2022-04-21T17:37:18.3996204+01:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="CA2_Server.Data.CA2_ServerContext">
+      <Value>Data Source=tcp:ca2-crypto.database.windows.net,1433%3bInitial Catalog=Crypto-Database%3bUser Id=crypto-admin%40ca2-crypto%3bPassword=Passwordead2</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

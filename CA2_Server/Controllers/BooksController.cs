@@ -10,7 +10,7 @@ using CA2_Server.Data;
 
 namespace CA2_Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class BooksController : ControllerBase
     {
@@ -42,8 +42,7 @@ namespace CA2_Server.Controllers
             return books;
         }
 
-        // PUT: api/Books/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBooks(int id, Books books)
         {

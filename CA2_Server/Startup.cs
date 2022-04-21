@@ -31,7 +31,7 @@ namespace CA2_Server
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CA2_Server", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "The API", Version = "v1" });
             });
 
             services.AddDbContext<CA2_ServerContext>(options =>

@@ -10,7 +10,7 @@ using CA2_Server.Data;
 
 namespace CA2_Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class AuthorsController : ControllerBase
     {
@@ -23,9 +23,9 @@ namespace CA2_Server.Controllers
 
         // GET: api/Authors
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Author>>> GetAuthor()
+        public IEnumerable<Author> GetAuthor()
         {
-            return await _context.Author.ToListAsync();
+            return _context.Author.Include(c => c.Books); 
         }
 
         // GET: api/Authors/5

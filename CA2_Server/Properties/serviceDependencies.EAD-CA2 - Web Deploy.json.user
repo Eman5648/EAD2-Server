@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "apis1": {
-      "restored": true,
-      "restoreTime": "2022-04-20T16:10:48.9325584Z"
-    },
     "mssql1": {
       "restored": true,
       "restoreTime": "2022-04-20T16:12:15.9819891Z"
@@ -19,16 +15,6 @@
       "Name": "mssql1.resourceGroupName",
       "Type": "resourceGroup",
       "Value": "EAD-CA2"
-    },
-    "apis1.resourceGroupName": {
-      "Name": "apis1.resourceGroupName",
-      "Type": "resourceGroup",
-      "Value": "EAD-CA2"
-    },
-    "apis1.subscriptionId": {
-      "Name": "apis1.subscriptionId",
-      "Type": "subscription",
-      "Value": "81e4328c-235e-48ab-b297-46087fd44b07"
     }
   }
 }
