@@ -14,7 +14,7 @@ namespace CA2_Server.Data
         {
         }
         public DbSet<CA2_Server.Books> Books { get; set; }
-        public DbSet<CA2_Server.Author> Author { get; set; }
+        public DbSet<CA2_Server.Authors> Authors { get; set; }
 
     }
 }

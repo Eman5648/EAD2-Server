@@ -2,7 +2,7 @@
   "dependencies": {
     "mssql1": {
       "secretStore": "AzureAppSettings",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ca2-crypto/databases/Crypto-Database",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ca2-crypto/databases/Book-Database",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:CA2_ServerContext"
     }

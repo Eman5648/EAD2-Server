@@ -23,36 +23,36 @@ namespace CA2_Server.Controllers
 
         // GET: api/Authors
         [HttpGet]
-        public IEnumerable<Author> GetAuthor()
+        public IEnumerable<Authors> GetAuthors()
         {
-            return _context.Author.Include(c => c.Books); 
+            return  _context.Authors.Include(c => c.Books);
         }
 
         // GET: api/Authors/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Author>> GetAuthor(int id)
+        public async Task<ActionResult<Authors>> GetAuthors(int id)
         {
-            var author = await _context.Author.FindAsync(id);
+            var authors = await _context.Authors.FindAsync(id);
 
-            if (author == null)
+            if (authors == null)
             {
                 return NotFound();
             }
 
-            return author;
+            return authors;
         }
 
         // PUT: api/Authors/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAuthor(int id, Author author)
+        public async Task<IActionResult> PutAuthors(int id, Authors authors)
         {
-            if (id != author.AuthorID)
+            if (id != authors.AuthorID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(author).State = EntityState.Modified;
+            _context.Entry(authors).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CA2_Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AuthorExists(id))
+                if (!AuthorsExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CA2_Server.Controllers
         // POST: api/Authors
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Author>> PostAuthor(Author author)
+        public async Task<ActionResult<Authors>> PostAuthors(Authors authors)
         {
-            _context.Author.Add(author);
+            _context.Authors.Add(authors);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAuthor", new { id = author.AuthorID }, author);
+            return CreatedAtAction("GetAuthors", new { id = authors.AuthorID }, authors);
         }
 
         // DELETE: api/Authors/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAuthor(int id)
+        public async Task<IActionResult> DeleteAuthors(int id)
         {
-            var author = await _context.Author.FindAsync(id);
-            if (author == null)
+            var authors = await _context.Authors.FindAsync(id);
+            if (authors == null)
             {
                 return NotFound();
             }
 
-            _context.Author.Remove(author);
+            _context.Authors.Remove(authors);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool AuthorExists(int id)
+        private bool AuthorsExists(int id)
         {
-            return _context.Author.Any(e => e.AuthorID == id);
+            return _context.Authors.Any(e => e.AuthorID == id);
         }
     }
 }
