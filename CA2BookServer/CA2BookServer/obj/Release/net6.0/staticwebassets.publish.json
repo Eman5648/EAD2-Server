@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WJv04vLLs8PgDibivNA4UKc/GOsiRCcG7xWfcFO0vrQ=",
+  "Source": "CA2BookServer",
+  "BasePath": "_content/CA2BookServer",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

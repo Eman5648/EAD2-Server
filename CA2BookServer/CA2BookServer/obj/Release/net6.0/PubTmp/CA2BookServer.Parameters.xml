@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="CA2BookServer20220425025357" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\eman\\OneDrive\ -\ Technological\ University\ Dublin\\4th\ year\\EntAppDev2\\EAD2-Server\\CA2BookServer\\CA2BookServer\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="CA2BookServer.Data.CA2BookServerContext" description="" value="Data Source=tcp:ead2bookserver.database.windows.net,1433;Initial Catalog=Book-Server;User Id=admin-book@ead2bookserver;Password=Passwordead2" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\eman\\OneDrive\ -\ Technological\ University\ Dublin\\4th\ year\\EntAppDev2\\EAD2-Server\\CA2BookServer\\CA2BookServer\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\CA2BookServer\.Data\.CA2BookServerContext\.sql$" />
+  </parameter>
+</parameters>

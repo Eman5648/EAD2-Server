@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPDVDaj/K6EGhNyA/LXHr4gAAAAACAAAAAAAQZgAAAAEAACAAAAC1AkycAM9xITbh429Vv3TZ5bCPKAWlWLGlfUe49AGEbwAAAAAOgAAAAAIAACAAAADp73mhTkgFEc+vZXGySiYbfgPTVyXTUUaEHJeaRQXL44AAAADqfu5+27FrRwSJNmN/9mwbI5Qfh2jJCaFwmK3Xr2+v7p4iczOlLIduwyRU9i9MwfRNK3vLEt73TxI1zVLQ1dufRMTBy1SVhmzjVtFvIc/PMt1qcVf3vMT8AmMmZjDs4qUW0v+V8f58K6Q3kQCeT8wVVwK6Z4fTlJ98DnRkWbO2dEAAAADM1nQDWBxOo9VWHgoYMgTJUfiRn1hs/Vcd6c3HzZ+cY+FEzr8Op0w6H01aE4oeZwr5nlAcJHmTRFhpLym/GVSF</EncryptedPassword>
+    <History>True|2022-04-25T10:06:40.8232700Z;True|2022-04-25T04:16:23.0157180+01:00;True|2022-04-25T03:28:11.6507227+01:00;True|2022-04-25T03:09:39.4977603+01:00;True|2022-04-25T03:07:42.7449509+01:00;False|2022-04-25T02:58:23.9781647+01:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="CA2BookServer.Data.CA2BookServerContext">
+      <Value>Data Source=tcp:ead2bookserver.database.windows.net,1433%3bInitial Catalog=Book-Server%3bUser Id=admin-book%40ead2bookserver%3bPassword=Passwordead2</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

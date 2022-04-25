@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\eman\OneDrive - Technological University Dublin\4th year\EntAppDev2\EAD2-Server\CA2BookServer\CA2BookServer\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\eman\OneDrive - Technological University Dublin\4th year\EntAppDev2\EAD2-Server\CA2BookServer\CA2BookServer\obj\Release\net6.0\PubTmp\EFSQLScripts\CA2BookServer.Data.CA2BookServerContext.sql" />
+</sitemanifest>
