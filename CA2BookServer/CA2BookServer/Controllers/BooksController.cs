@@ -22,6 +22,7 @@ namespace CA2BookServer.Controllers
             _context = context;
         }
 
+
         // GET: api/Books
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Books>>> GetBooks()
@@ -43,39 +44,27 @@ namespace CA2BookServer.Controllers
             return books;
         }
 
+
         // PUT: api/Books/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutBooks(int id, Books books)
+        [HttpPut("View/{name}")]
+        public async Task<IActionResult> PutBooks(string name)
         {
-            if (id != books.BookID)
+            Books b = _context.Books.FirstOrDefault(bk => bk.BookName == name);
+            if (b == null)
             {
                 return BadRequest();
             }
 
-            _context.Entry(books).State = EntityState.Modified;
-
-            try
+            else
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BooksExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                b.Read++;
+                _context.SaveChanges();
             }
 
             return NoContent();
         }
 
-        // POST: api/Books
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Books>> PostBooks(Books books)
         {
