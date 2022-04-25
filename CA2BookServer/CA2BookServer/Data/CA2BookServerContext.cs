@@ -10,6 +10,8 @@ namespace CA2BookServer.Data
 {
     public class CA2BookServerContext : DbContext
     {
+        public readonly object GetBooks;
+
         public CA2BookServerContext (DbContextOptions<CA2BookServerContext> options)
             : base(options)
         {

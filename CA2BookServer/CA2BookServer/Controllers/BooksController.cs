@@ -30,14 +30,14 @@ namespace CA2BookServer.Controllers
         }
 
         // GET: api/Books/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Books>> GetBooks(int id)
+        [HttpGet("{name}")]
+        public IEnumerable<Books> GetBooks(string name)
         {
-            var books = await _context.Books.FindAsync(id);
+            var books = _context.Books.Where(b => b.BookName == name);
 
             if (books == null)
             {
-                return NotFound();
+                return null;
             }
 
             return books;

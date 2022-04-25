@@ -5,11 +5,13 @@ using Moq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace BookServerTest
+
+/*namespace BookServerTest
 {
     public class BooksUnitTest
     {
-        CA2BookServerContext _context;
+        BooksController _controller;
+        IBookService _service;
 
         
         [Fact]
@@ -17,15 +19,15 @@ namespace BookServerTest
         {
 
             var bookserver = new Mock<CA2BookServerContext>();
-            bookserver.Setup(_=> _.GetBooks()).ReturnsAsync()
+            bookserver.Setup(_ => _.GetBooks()).ReturnsAsync(BookMockData.BookData());
             var sut = new BooksController(bookserver.Object);
 
 
             /// Act
-            var result = (OkObjectResult)await sut.GetAllAsync();
+            var result = (OkObjectResult)await sut.GetBooks();
 
             // /// Assert
             result.StatusCode.Should().Be(200);
         }
     }
-}
+}*/
